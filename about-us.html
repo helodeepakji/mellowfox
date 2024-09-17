@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Mellow Fox Studios | Home</title>
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header
+      class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-7xl z-20 flex justify-between items-center p-4"
+    >
+      <!-- Logo -->
+      <div>
+        <a href="/index.html">
+          <img src="images/logo.png" alt="Logo" class="h-16" />
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button (Hamburger) -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-white focus:outline-none">
+          <svg
+            class="w-8 h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="hidden md:block">
+        <ul id="menu" class="md:flex space-x-8 text-lg font-medium text-white">
+          <li><a href="index.html" class="hover:text-custom-pink">HOME</a></li>
+          <li>
+            <a href="services.html" class="hover:text-custom-pink">SERVICES</a>
+          </li>
+          <li><a href="tech.html" class="hover:text-custom-pink">TECH</a></li>
+          <li>
+            <a href="about-us.html" class="hover:text-custom-pink">ABOUT</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-custom-pink">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav
+      id="mobile-menu"
+      class="z-50 hidden fixed inset-0 text-center bg-black bg-opacity-90 text-white p-6 flex-col space-y-10"
+    >
+      <!-- Close Button -->
+      <button
+        id="close-menu"
+        class="absolute top-0 right-0 p-6 text-white text-4xl focus:outline-none"
+      >
+        &times;
+      </button>
+
+      <div class="flex flex-col items-center justify-center mt-20">
+        <ul class="text-lg font-medium space-y-4">
+          <li>
+            <a href="index.html" class="hover:text-custom-pink block">HOME</a>
+          </li>
+          <li>
+            <a href="services.html" class="hover:text-custom-pink block"
+              >SERVICES</a
+            >
+          </li>
+          <li><a href="#" class="hover:text-custom-pink block">TECH</a></li>
+          <li>
+            <a href="about-us.html" class="hover:text-custom-pink block"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-custom-pink block"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="overflow-hidden">
+      <section
+        class="flex flex-col lg:flex-row items-start justify-between p-6 pt-32 bg-white text-white overflow-hidden bg-no-repeat"
+        style="
+          background-image: url('images/bg.png');
+          background-size: cover; /* Ensures image covers content area */
+          background-position: center; /* Keeps the image centered */
+        "
+      >
+        <!-- Left Content -->
+        <div class="z-10 w-full lg:w-1/2 space-y-8">
+          <!-- Section One: About Us -->
+          <div class="space-y-4">
+            <h2 class="text-3xl font-bold">About Us</h2>
+            <p class="text-white">
+              At Mellow Fox Studios, we're passionate about creating games that
+              captivate the imagination and push the boundaries of storytelling
+              and gameplay. Founded by a team of game enthusiasts and industry
+              veterans, our studio is dedicated to delivering unforgettable
+              experiences that bring players into vibrant, engaging worlds.
+            </p>
+            <button
+              class="bg-[#FFE967] text-black font-bold px-6 py-3 rounded-full"
+            >
+              LEARN MORE
+            </button>
+          </div>
+
+          <!-- Section Two: Company Overview -->
+          <div class="space-y-4">
+            <h2 class="text-3xl font-bold">Our Company Overview</h2>
+            <p class="text-white">
+              At Mellow Fox Studios, we're passionate about creating games that
+              captivate the imagination and push the boundaries of storytelling
+              and gameplay. Founded by a team of game enthusiasts and industry
+              veterans, our studio is dedicated to delivering unforgettable
+              experiences that bring players into vibrant, engaging worlds.
+            </p>
+            <div class="space-x-4">
+              <button
+                class="bg-[#FFE967] text-black font-bold px-6 py-3 rounded-full"
+              >
+                COMPANY
+              </button>
+              <button
+                class="bg-[#FFE967] text-black font-bold px-6 py-3 rounded-full"
+              >
+                OUR TEAMS
+              </button>
+            </div>
+          </div>
+
+          <!-- Section Three: Join Us on Our Journey -->
+          <div class="space-y-4">
+            <h2 class="text-3xl font-bold">Join Us on Our Journey</h2>
+            <p class="text-white">
+              Whether you're a player, a creator, or a partner, we invite you to
+              join us on this exciting journey. Together, let's redefine what's
+              possible in the world of gaming. Explore our games, learn about
+              our projects, and be a part of the Mellow Fox Studios community.
+            </p>
+            <button
+              class="bg-[#FFE967] text-black font-bold px-6 py-3 rounded-full"
+            >
+              LEARN MORE
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Content: Image -->
+        <div class="hidden lg:block lg:w-1/2 lg:pl-8 mt-8 lg:mt-0">
+          <img
+            src="images/mock.png"
+            alt="Gaming World"
+            class="w-full h-auto object-cover rounded shadow-lg"
+          />
+        </div>
+      </section>
+
+      <!-- Form Section -->
+      <section
+        class="relative flex justify-center items-center min-h-screen p-4 bg-black overflow-hidden"
+        style="background-image: url(images/form-bg.png)"
+      >
+        <!-- Form Container -->
+        <div
+          class="md:translate-y-5 relative bg-[#D9D9D9] mt-0 md:mt-16 lg:mt-0 p-4 pt-32 md:p-16 rounded-2xl shadow-md w-full max-w-4xl z-10"
+        >
+          <!-- Top Left Image -->
+          <img
+            src="images/contact-us.png"
+            alt="Logo"
+            class="hidden md:block absolute top-0 left-0 lg:-top-8 lg:-left-4 h-24 w-24 lg:w-48 lg:h-48 object-cover rounded-full"
+          />
+
+          <!-- Top Right Contact Details -->
+          <div class="absolute top-4 p-4 right-4 flex space-x-4">
+            <div class="flex items-center">
+              <img src="images/email.png" alt="" />
+              <div class="flex flex-col items-start text-xs ml-5">
+                <p style="font-size: 14px" class="font-semibold mb-2">EMAIL</p>
+                <p style="font-size: 14px" class="text-[#DD5471]">
+                  info@mellowfox.com
+                </p>
+              </div>
+            </div>
+            <div class="text-xs flex items-center">
+              <img src="images/phone.png" alt="" />
+              <div class="flex flex-col items-start ml-5">
+                <p style="font-size: 14px" class="font-semibold mb-2">PHONE</p>
+                <p style="font-size: 14px" class="text-[#DD5471]">
+                  03 5432 1234
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Content -->
+          <div class="px-0 lg:px-16">
+            <h2
+              class="text-5xl text-left font-bold text-black mb-4 mt-8 lg:mt-0"
+            >
+              Get In Touch
+            </h2>
+            <p class="text-left text-black font-semibold mb-6">
+              We'd love to hear from you! Whether you have questions about our
+              games, need support, or are interested in collaborating with us,
+              our team at Mellow Fox Studios is here to help.
+            </p>
+            <form class="space-y-4">
+              <!-- Name Field -->
+              <input
+                type="text"
+                placeholder="Name *"
+                class="w-full p-3 placeholder-black border border-[#888888] bg-transparent focus:outline-none"
+                onfocus="changePlaceholder(this, 'Name <span style=\'color:red;\'>*</span>')"
+                onblur="resetPlaceholder(this, 'Name *')"
+              />
+
+              <!-- Email Field -->
+              <input
+                type="email"
+                placeholder="Email *"
+                class="w-full p-3 placeholder-black border border-[#888888] bg-transparent focus:outline-none"
+                onfocus="changePlaceholder(this, 'Email <span style=\'color:red;\'>*</span>')"
+                onblur="resetPlaceholder(this, 'Email *')"
+              />
+
+              <!-- Phone Number Field -->
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                class="w-full p-3 placeholder-black border border-[#888888] bg-transparent focus:outline-none"
+              />
+
+              <!-- How Did You Find Us Dropdown -->
+              <select
+                class="w-full p-3 border placeholder-black border-[#888888] bg-transparent focus:outline-none"
+              >
+                <option value="" disabled selected>How did you find us?</option>
+                <option value="social_media">Social Media</option>
+                <option value="search_engine">Search Engine</option>
+                <option value="friend">Friend</option>
+                <option value="advertisement">Advertisement</option>
+                <option value="other">Other</option>
+              </select>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="w-full bg-black text-white p-3 rounded-md font-bold hover:bg-gray-800 transition duration-300"
+              >
+                SEND
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- section icons -->
+      <section class="bg-black overflow-hidden">
+        <div
+          class="container mx-auto flex justify-between pt-14 md:pt-32 items-center space-x-4"
+        >
+          <!-- Image 1 -->
+          <img
+            src="images/switchgrip.png"
+            alt="Image 1"
+            class="h-20 object-cover"
+          />
+
+          <!-- Image 2 -->
+          <img
+            src="images/laptop.png"
+            alt="Image 2"
+            class="h-20 object-cover"
+          />
+
+          <!-- Image 3 -->
+          <img
+            src="images/outlines.png"
+            alt="Image 3"
+            class="h-20 object-cover"
+          />
+
+          <!-- Image 4 -->
+          <img
+            src="images/joystick-red.png"
+            alt="Image 4"
+            class="h-20 object-cover"
+          />
+
+          <img
+            src="images/joystick-ver.png"
+            alt="Image 4"
+            class="h-20 object-cover"
+          />
+
+          <!-- Image 5 -->
+          <img src="images/PS.png" alt="Image 5" class="h-20 object-cover" />
+        </div>
+      </section>
+
+      <!-- New Section -->
+      <section class="bg-black text-white py-16 px-4 text-center">
+        <h2 class="text-5xl md:text-[100px] font-bold">
+          Crafting <span class="text-custom-pink">Dreams,</span>
+        </h2>
+        <h2 class="text-5xl md:text-[100px] font-bold mb-6">
+          <span class="text-custom-pink">One</span> Pixel
+          <span class="text-custom-pink">at a</span> Time
+        </h2>
+
+        <div
+          class="flex flex-col lg:flex-row mb-10 items-center justify-center lg:justify-between max-w-5xl mx-auto"
+        >
+          <img
+            src="images/freefire.png"
+            alt="Adventure Image"
+            class="w-1/2 lg:w-1/5 md:w-1/4 p-4 lg:ml-10"
+          />
+
+          <div class="w-full lg:w-2/3 text-lg text-left">
+            <h2 class="text-5xl mb-4">Free Fire</h2>
+            <p>
+              Whether you're playing on PC or mobile, get ready for an adventure
+              like no other! Join us as we redefine the future of gaming, one
+              epic quest at a time. Oh, and did we mention? We were featured at
+              the 'Startup Mahakumbh' by the Government of India. Not too shabby
+              for a bunch of foxes, right?
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col lg:flex-row-reverse items-center justify-center lg:justify-between max-w-5xl mx-auto mb-12"
+        >
+          <img
+            src="images/battlegrounds.png"
+            alt="Adventure Image"
+            class="w-full lg:w-2/5 md:w-1/4 p-4"
+          />
+
+          <div class="w-full text-left text-lg">
+            <h2 class="text-5xl mb-4">BattleGround</h2>
+            <p>
+              Whether you're playing on PC or mobile, get ready for an adventure
+              like no other! Join us as we redefine the future of gaming, one
+              epic quest at a time. Oh, and did we mention? We were featured at
+              the 'Startup Mahakumbh' by the Government of India. Not too shabby
+              for a bunch of foxes, right?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative bg-black lg:py-16 p-8 lg:pr-8 mx-auto">
+        <div
+          class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center mb-10"
+        >
+          <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+            <img
+              src="images/joystick-pink.png"
+              alt="Placeholder Image"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <div
+            class="text-center md:text-left w-full lg:w-1/2 flex flex-col justify-center text-white lg:pl-12"
+          >
+            <h2 class="text-md font-light mb-4">Stay up to date</h2>
+            <p class="mb-6 text-3xl">
+              You're probably thinking, "Another newsletter?" <br />
+              But we promise, you're going to love ours!
+            </p>
+
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="flex-1 p-4 rounded-l-2xl text-black bg-gray-200 outline-none"
+              />
+              <button
+                class="p-4 bg-black text-white font-light rounded-r-2xl border-2 border-white"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="images/buildings.png"
+          alt="Background Image"
+          class="absolute bottom-0 left-0 w-full h-1/2 object-cover bg-black"
+          style="transform: translateY(80%)"
+        />
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="relative bg-black text-white p-4 md:p-16">
+      <div class="absolute inset-0">
+        <img
+          src="images/mountain.png"
+          alt="Background Image 1"
+          class="w-full h-full object-cover mix-blend-luminosity opacity-70"
+        />
+      </div>
+
+      <div class="absolute inset-0">
+        <img
+          src="images/buildings.png"
+          alt="Background Image 2"
+          class="w-full h-full object-cover mix-blend-luminosity opacity-70"
+        />
+      </div>
+
+      <div class="relative max-w-7xl mx-auto mt-10 px-4 lg:px-8 z-10">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+          <!-- Column 1: Product -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Product</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-gray-300">Landing Page</a></li>
+              <li><a href="#" class="hover:text-gray-300">Popup Builder</a></li>
+              <li><a href="#" class="hover:text-gray-300">Web-design</a></li>
+              <li><a href="#" class="hover:text-gray-300">Content</a></li>
+              <li><a href="#" class="hover:text-gray-300">Integrations</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Use Cases -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Use Cases</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-gray-300">Web Designers</a></li>
+              <li><a href="#" class="hover:text-gray-300">Marketers</a></li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Small Business</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300">Website Builder</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Resources -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Resources</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-gray-300">Academy</a></li>
+              <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+              <li><a href="#" class="hover:text-gray-300">Themes</a></li>
+              <li><a href="#" class="hover:text-gray-300">Hosting</a></li>
+              <li><a href="#" class="hover:text-gray-300">Developers</a></li>
+              <li><a href="#" class="hover:text-gray-300">Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Company -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Company</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+              <li><a href="#" class="hover:text-gray-300">Careers</a></li>
+              <li><a href="#" class="hover:text-gray-300">FAQs</a></li>
+              <li><a href="#" class="hover:text-gray-300">Teams</a></li>
+              <li><a href="#" class="hover:text-gray-300">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 5: Contact Us -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i class="fa fa-map-marker-alt self-start mt-2 mr-2"></i>
+                <span
+                  >Wisconsin Ave, Suite 700 Chevy Chase, Maryland 20815</span
+                >
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope mr-2"></i>
+                <span>WWW.MELLOWFOX.COM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Media Card -->
+        <div
+          class="flex flex-col justify-center mx-auto w-full lg:w-2/5 items-center my-20 bg-white bg-opacity-80 rounded-xl"
+        >
+          <div class="p-4">
+            <h3 class="text-black text-2xl font-semibold mb-4 text-center">
+              Follow us
+            </h3>
+            <div class="rounded-lg flex space-x-14">
+              <a href="#"><img src="images/facebook.png" /></a>
+              <a href="#"><img src="images/telegram.png" /></a>
+              <a href="#"><img src="images/twitter.png" /></a>
+              <a href="#"><img src="images/instagram.png" /></a>
+              <a href="#"><img src="images/linkedin.png" /></a>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Row -->
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <span class="text-sm mb-8 md:mb-0"
+            >&copy; 2024 All rights reserved.</span
+          >
+          <div
+            class="flex flex-col md:flex-row justify-center items-center md:space-x-4"
+          >
+            <a href="#" class="hover:text-gray-300 text-sm mb-4 md:mb-0"
+              >Privacy Policy</a
+            >
+            <a href="#" class="hover:text-gray-300 text-sm mb-4 md:mb-0"
+              >Terms of Service</a
+            >
+            <a href="#" class="hover:text-gray-300 text-sm mb-4 md:mb-0"
+              >Cookie Policy</a
+            >
+            <a href="#" class="hover:text-gray-300 text-sm mb-4 md:mb-0"
+              >Disclaimer</a
+            >
+            <a href="#" class="hover:text-gray-300 text-sm">Help Center</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle')
+      const menu = document.getElementById('menu')
+      const mobileMenu = document.getElementById('mobile-menu')
+
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden')
+      })
+
+      // Close menu functionality
+      document
+        .getElementById('close-menu')
+        .addEventListener('click', function () {
+          document.getElementById('mobile-menu').classList.add('hidden')
+        })
+    </script>
+  </body>
+</html>

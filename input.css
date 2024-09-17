@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  font-size: 18px;
+}
+
+.clip-triangle {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.octagon {
+  clip-path: polygon(
+    10% 0%,
+    /* Top-left corner */ 90% 0%,
+    /* Top-right corner */ 100% 20%,
+    /* Right-top side */ 100% 80%,
+    /* Right-bottom side */ 90% 100%,
+    /* Bottom-right corner */ 10% 100%,
+    /* Bottom-left corner */ 0% 80%,
+    /* Left-bottom side */ 0% 20% /* Left-top side */
+  );
+}
+
+.outline-text {
+  -webkit-text-stroke: 0.5px white; /* Outline color and thickness */
+}
+
+.clip-startup {
+  /* Adjust clip-path to match the shape of the Vector image */
+  clip-path: url(#clip-shape);
+}
+
+.shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #000; /* Light gray background */
+}
+
+/* Handle (scrollbar itself) */
+::-webkit-scrollbar-thumb {
+  background-color: #FF01FB; /* Darker gray for the handle */
+  border-radius: 10px; /* Rounded edges */
+  border: 3px solid transparent; /* Add space around the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+/* For Firefox, you need to use scrollbar-width and scrollbar-color */
+body {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #888 #f1f1f1; /* Handle and track colors */
+}
+

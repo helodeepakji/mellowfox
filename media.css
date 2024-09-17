@@ -1,0 +1,70 @@
+/* <style> */
+  @media(max-width: 480px) {
+    .text-6xl {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    .text-lg {
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    .buildings {}
+
+    .text-5xl {
+      font-size: 2rem;
+    }
+
+    .freefire {
+      display: flex;
+      flex-direction: row;
+    }
+    .blue-box{
+     width: 180px;
+     height: 60px;
+     font-size: 7px;
+     padding: 0;
+    }
+    .three-man{
+      display: flex;
+      flex-direction: row;
+    }
+    .components{
+      height: 30px;
+    }
+    .pt-14{
+      padding: 0;
+    }
+    .joystick{
+      width: 78%;
+    }
+    .text-3xl{
+      font-size: 0.5rem;
+      line-height: 1rem;
+    }
+    .find{
+      padding: 0.3rem;
+    }
+    .footer-lists{
+      display: flex;
+      margin-left: -30px;
+    }
+   .box{
+    padding: 0;
+    padding: 0;
+   }
+   .items{
+    font-size: 10px;
+    line-height: 1.5rem;
+   }
+   .contact_box{
+    display: flex;
+    flex-direction: row;
+   }
+   
+  }
+/* </style> */

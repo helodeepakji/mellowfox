@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+  <title>Mellow Fox Studios | Home</title>
+</head>
+<style>
+  @media(max-width: 480px) {
+    .text-6xl {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    .text-lg {
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    .buildings {}
+
+    .text-5xl {
+      font-size: 2rem;
+    }
+
+
+    .blue-box {
+      width: 180px;
+      height: 60px;
+      font-size: 7px;
+      padding: 0;
+    }
+
+    .three-man {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .components {
+      height: 30px;
+    }
+
+    .pt-14 {
+      padding: 0;
+    }
+
+    .joystick {
+      width: 78%;
+    }
+
+    .text-3xl {
+      font-size: 0.5rem;
+      line-height: 1rem;
+    }
+
+    .find {
+      padding: 0.3rem;
+    }
+
+    .footer-lists {
+      display: flex;
+      flex-direction: row;
+      margin-left: -30px;
+    }
+
+    .box {
+      padding: 0;
+      padding: 0;
+      font-size: 12px;
+    }
+
+    .items {
+      font-size: 10px;
+      line-height: 1.5rem;
+    }
+
+    .contact_box {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .h-20 {
+      height: 2rem;
+    }
+
+    .p-8 {
+      padding: 1rem;
+    }
+    .w-8{
+      margin-left: -180px;
+    }
+  }
+
+</style>
+
+<body class="overflow-x-hidden">
+  <!-- Header Section -->
+  <header
+    class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-7xl z-20 flex justify-between items-center p-4">
+    <!-- Logo -->
+    <div>
+      <a href="/index.html">
+        <img src="images/logo.png" alt="Logo" class="h-16" />
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button (Hamburger) -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-white focus:outline-none">
+        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="hidden md:block">
+      <ul id="menu" class="md:flex space-x-8 text-lg font-medium text-white">
+        <li><a href="index.html" class="hover:text-custom-pink">HOME</a></li>
+        <li>
+          <a href="services.html" class="hover:text-custom-pink">SERVICES</a>
+        </li>
+        <li><a href="#" class="hover:text-custom-pink">TECH</a></li>
+        <li>
+          <a href="about-us.html" class="hover:text-custom-pink">ABOUT</a>
+        </li>
+        <li>
+          <a href="contact.html" class="hover:text-custom-pink">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu"
+    class="z-50 hidden fixed inset-0 text-center bg-black bg-opacity-90 text-white p-6 flex-col space-y-10">
+    <!-- Close Button -->
+    <button id="close-menu" class="absolute top-0 right-0 p-6 text-white text-4xl focus:outline-none">
+      &times;
+    </button>
+
+    <div class="flex flex-col items-center justify-center mt-20">
+      <ul class="text-lg font-medium space-y-4">
+        <li>
+          <a href="index.html" class="hover:text-custom-pink block">HOME</a>
+        </li>
+        <li>
+          <a href="services.html" class="hover:text-custom-pink block">SERVICES</a>
+        </li>
+        <li><a href="#" class="hover:text-custom-pink block">TECH</a></li>
+        <li>
+          <a href="about-us.html" class="hover:text-custom-pink block">ABOUT</a>
+        </li>
+        <li>
+          <a href="contact.html" class="hover:text-custom-pink block">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="relative w-full flex md:mb-56 flex-col items-center min-h-screen justify-center text-center p-4">
+      <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-10">
+        <source src="images/video" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div
+        class="absolute top-0 left-0 w-full h-full z-0 bg-gradient-to-b from-black via-transparent to-transparent opacity-10">
+      </div>
+
+      <div class="hidden md:block absolute bg-black left-0 z-0 right-0 md:top-40">
+        <img src="images/mountain.png" alt="Background Image 1"
+          class="w-full h-full object-cover mix-blend-luminosity opacity-70" />
+      </div>
+      <div class="hidden md:block absolute bg-black left-0 z-0 right-0 md:top-40">
+        <img src="images/buildings.png" alt="Background Image 2"
+          class="w-full h-full object-cover mix-blend-luminosity opacity-70" />
+      </div>
+
+      <div class="relative z-20">
+        <h1 class="text-6xl md:text-8xl font-bold text-white mb-4 font-squada">
+          MELLOW FOX <span class="text-red-600">S</span>T<span class="text-red-600">UDIOS</span>
+        </h1>
+        <p class="max-w-xl mx-auto text-lg text-white text-center mb-8">
+          At Mellow Fox Studios, We're on a quest to be the top fox in the
+          gaming industry. We're all about innovation, creativity, and
+          technical wizardry.
+        </p>
+        <img src="images/joystick.png" alt="Sample Image" class="joystick max-w-md mx-auto" />
+      </div>
+    </section>
+
+    <section class="relative bg-black flex items-center justify-center min-h-screen p-8 md:p-0">
+      <div class="z-30 flex flex-col items-center justify-center">
+        <h1 class="text-center text-6xl font-bold text-white mb-4 font-squada">
+          MELLOW FOX <span class="text-red-600">S</span>T<span class="text-red-600">UDIOS</span>
+        </h1>
+        <p class="max-w-xl mx-auto text-md text-white text-center mb-8">
+          At Mellow Fox Studios, We're on a quest to be top fox in the gaming
+          industry. We're all about innovation, Creativity, and technical
+          wizardry
+        </p>
+      </div>
+
+      <div class="absolute inset-0">
+        <img src="images/buildings.png" alt="Background Image 2" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 px-10 py-4 z-10">
+        <div class="absolute bottom-0 left-10 w-1/3">
+          <div class="relative w-3/5 flex justify-center">
+            <img src="images/astra.png" alt="Left Image" class="z-10 w-full h-auto object-cover" />
+            <div style="top: -35%"
+              class="blue-box z-0 absolute right-0 bg-gradient-to-br from-[#05008B] to-[#010025] text-white p-6 shadow-lg octagon">
+              Join us as we continue to break new ground in gaming. At Mellow
+              Fox Studios, we're not just making games; we're creating
+              experiences that you'll remember long after the screen goes
+              dark.
+            </div>
+          </div>
+        </div>
+
+        <div style="transform: translateY(4%)" class="bottom-0 mx-auto flex items-end justify-center w-1/3">
+          <div class="relative w-2/3 flex justify-center">
+            <img src="images/left-man.png" alt="Middle Image" class="w-full object-cover" />
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 right-0 w-1/3">
+          <div class="relative w-3/5 flex justify-center">
+            <img src="images/sova.png" alt="Right Image" class="z-10 w-full h-auto object-cover" />
+            <div style="top: -35%"
+              class="blue-box z-0 absolute right-0 bg-gradient-to-br from-[#05008B] to-[#010025] text-white p-6 shadow-lg octagon">
+              Join us as we continue to break new ground in gaming. At Mellow
+              Fox Studios, we're not just making games; we're creating
+              experiences that you'll remember long after the screen goes
+              dark.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section icons -->
+    <section class=" bg-black overflow-hidden">
+      <div class="components container mx-auto flex justify-between pt-14 md:pt-32 items-center space-x-4">
+        <!-- Image 1 -->
+        <img src="images/switchgrip.png" alt="Image 1" class="h-20 object-cover" />
+
+        <!-- Image 2 -->
+        <img src="images/laptop.png" alt="Image 2" class="h-20 object-cover" />
+
+        <!-- Image 3 -->
+        <img src="images/outlines.png" alt="Image 3" class="h-20 object-cover" />
+
+        <!-- Image 4 -->
+        <img src="images/joystick-red.png" alt="Image 4" class="h-20 object-cover" />
+
+        <img src="images/joystick-ver.png" alt="Image 4" class="h-20 object-cover" />
+
+        <!-- Image 5 -->
+        <img src="images/PS.png" alt="Image 5" class="h-20 object-cover" />
+      </div>
+    </section>
+
+    <section class="bg-black text-white py-16 px-4 text-center">
+      <h2 class="text-5xl md:text-[100px] font-bold">
+        Crafting <span class="text-custom-pink">Dreams,</span>
+      </h2>
+
+      <h2 class="text-5xl md:text-[100px] font-bold mb-6">
+        <span class="text-custom-pink">One</span> Pixel
+        <span class="text-custom-pink">at a</span> Time
+      </h2>
+      
+      <div class="freefire lg:flex-row mb-10 items-center justify-center lg:justify-between max-w-5xl mx-auto">
+        <img src="images/freefire.png" alt="Adventure Image" class="w-1/2 lg:w-1/5 md:w-1/4 p-4 lg:ml-10" />
+
+        <div class="w-full lg:w-2/3 text-lg text-left">
+          <h2 class="text-5xl mb-4">Free Fire</h2>
+          <p>
+            Whether you're playing on PC or mobile, get ready for an adventure
+            like no other! Join us as we redefine the future of gaming, one
+            epic quest at a time. Oh, and did we mention? We were featured at
+            the 'Startup Mahakumbh' by the Government of India. Not too shabby
+            for a bunch of foxes, right?
+          </p>
+        </div>
+      </div>
+
+      <div class="freefire flex-col lg:flex-row-reverse items-center justify-center lg:justify-between max-w-5xl mx-auto mb-12">
+
+        <div class=" w-full text-left text-lg">
+          <h2 class="text-5xl mb-4">BattleGround</h2>
+          <p>
+            Whether you're playing on PC or mobile, get ready for an adventure
+            like no other! Join us as we redefine the future of gaming, one
+            epic quest at a time. Oh, and did we mention? We were featured at
+            the 'Startup Mahakumbh' by the Government of India. Not too shabby
+            for a bunch of foxes, right?
+          </p>
+        </div>
+        <img src="images/battlegrounds.png" alt="Adventure Image" class="w-full lg:w-2/5 md:w-1/4 p-4" />
+
+      </div>
+    </section>
+
+    <section class="relative bg-black lg:py-16 p-8 lg:p-0 lg:pr-8 mx-auto">
+      <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center mb-10">
+        <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <img src="images/joystick-pink.png" alt="Placeholder Image" class="w-full h-auto" />
+        </div>
+
+        <div class="text-center md:text-left w-full lg:w-1/2 flex flex-col justify-center text-white lg:pl-12">
+          <h2 class="text-md font-light mb-4">Stay up to date</h2>
+          <p class="mb-6 text-3xl">
+            You're probably thinking, "Another newsletter?" <br />
+            But we promise, you're going to love ours!
+          </p>
+
+          <div class="flex">
+            <input type="email" placeholder="Your Email"
+              class="find flex-1 p-4 rounded-l-2xl text-black bg-gray-200 outline-none" />
+            <button class="p-4 bg-black text-white font-light rounded-r-2xl border-2 border-white">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <img src="images/buildings.png" alt="Background Image"
+        class="absolute bottom-0 left-0 w-full h-1/2 object-cover bg-black" style="transform: translateY(80%)" />
+    </section>
+
+    <section class="relative bg-black w-full flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 bg-[#0B2226] clip-triangle"></div>
+
+      <div class="relative w-full mx-auto flex items-end justify-between text-white py-5">
+        <div class="hidden lg:w-1/3 mb-8 lg:mb-0 md:flex justify-center">
+          <img src="images/left-man.png" alt="Left Image" class="w-full max-w-sm h-auto object-cover" />
+        </div>
+
+        <div class="flex-1 text-left self-start p-4 lg:p-8 lg:py-12 w-screen md:w-1/3">
+          <h2 class="text-2xl lg:text-6xl font-bold mb-2 font-squada">
+            Our Games
+          </h2>
+          <p class="text-md lg:text-xl leading-relaxed mb-8 max-w-md font-squada font-normal mx-auto">
+            At Mellow Fox Studios, every game we create is a journey into the
+            extraordinary. From epic fantasy worlds to futuristic cities, our
+            games are designed to captivate, challenge, and inspire. We
+            believe in pushing the boundaries of what's possible, blending
+            breathtaking visuals with innovative gameplay mechanics.
+          </p>
+          <div class="mx-auto max-w-2xl">
+            <img src="images/mobile.gif" alt="Bottom Image" class="w-full h-auto object-cover" />
+          </div>
+        </div>
+
+        <div class="w-full lg:w-1/3 hidden md:flex justify-center">
+          <img src="images/right-woman.png" alt="Right Image" class="w-full max-w-sm h-auto object-cover" />
+        </div>
+      </div>
+      <!-- <div class="md:hidden flex w-full justify-between items-center">
+          <div class="w-full md:flex justify-center"></div>
+            <img
+              src="images/right-woman.png"
+              alt="Right Image"
+              class="w-full max-w-sm h-auto object-cover"
+            />
+          </div>
+        </div> -->
+    </section>
+
+    <section class="bg-black h-screen relative overflow-hidden">
+      <div class="z-20 absolute top-5 md:top-10 left-10 w-12 h-12 md:w-24 md:h-24">
+        <img src="images/moon.png" alt="" />
+      </div>
+
+      <div class="z-10 absolute inset-0" style="
+            background: linear-gradient(
+              175.26deg,
+              #000000 -56.57%,
+              #0b2226 48.77%
+            );
+            opacity: 0.6;
+          "></div>
+
+      <div class="absolute inset-0">
+        <img src="images/mountain.png" alt="Background Image 1"
+          class="w-full h-full object-cover mix-blend-luminosity opacity-70" />
+      </div>
+      <div class="absolute inset-0">
+        <img src="images/buildings.png" alt="Background Image 2"
+          class="w-full h-full object-cover mix-blend-luminosity opacity-70" />
+      </div>
+
+      <div
+        class="relative flex flex-col justify-center items-center z-40 max-w-sm md:max-w-lg mx-auto text-center p-8 pb-16 rounded-xl bg-opacity-40 bg-black border-8 border-gray-700"
+        style="
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: -10px -10px 18px 0px #99999980,
+              10px 10px 18px 0px #4c4c4c;
+          ">
+        <div class="absolute max-w-sm" style="top: -15%">
+          <img src="images/vision.gif" alt="" class="mb-4" />
+        </div>
+        <p class="text-white text-xl max-w-xl md:max-w-3xl text-left mt-20">
+          At Mellow Fox Studios, we're on a quest to be the top fox in the
+          gaming industry. We're all about innovation, creativity, and
+          technical wizardry. Our goal is simple: make games that not only
+          meet but blow away your expectations. Think rich narratives,
+          stunning visuals, and gameplay so engaging you'll need a reminder to
+          eat.
+        </p>
+        <button style="bottom: -5%; background: #ffe967; color: black"
+          class="px-4 py-2 rounded-full font-bold absolute">
+          WATCH TRAILER
+        </button>
+        <div class="absolute w-56 md:max-w-xs -right-28 -bottom-10 md:-right-36 md:-bottom-20">
+          <img src="images/man.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black h-screen w-full relative border-16 flex justify-center items-center">
+      <div class="h-full w-full flex items-center justify-center py-8 px-16">
+        <img src="images/border.png" alt="Background Image 1"
+          class="hidden md:block w-full h-full mix-blend-luminosity" />
+      </div>
+
+      <div class="absolute inset-0">
+        <img src="images/buildings.png" alt="Background Image 2"
+          class="w-full h-full object-cover mix-blend-luminosity opacity-70 rotate-180" />
+      </div>
+
+      <div class="z-10 absolute inset-0" style="
+            background: linear-gradient(
+              117.58deg,
+              #081a1d 6.71%,
+              #000000 110.53%
+            );
+            opacity: 0.6;
+          "></div>
+
+      <div class="absolute z-20 max-w-5xl mx-auto flex flex-col md:flex-row items-center p-8 rounded-lg md:space-x-8">
+        <div class="relative w-full md:w-1/2 flex justify-center md:justify-end">
+          <div class="relative">
+            <div class="flex items-center justify-center">
+              <img src="images/startup.png" alt="Startup Image" class="w-96 object-cover rounded-lg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mt-8 md:mt-0 text-white text-center md:text-left">
+          <h2 class="text-5xl font-bold mb-4 text-transparent outline-text">
+            Startup <br />Mahakumbh
+          </h2>
+          <p class="text-lg font-semibold">
+            Did we mention we were featured at the 'Startup Mahakumbh' held by
+            the Government of India? That's right! We made our mark among the
+            brightest startups in the country, and we're just getting started.
+            Who knew foxes could be so foxy?
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="relative bg-black text-white p-16">
+    <div class="absolute inset-0">
+      <img src="images/mountain.png" alt="Background Image 1"
+        class="w-full h-full object-cover mix-blend-luminosity opacity-70" />
+    </div>
+
+    <div class="absolute inset-0">
+      <img src="images/buildings.png" alt="Background Image 2"
+        class="w-full h-full object-cover mix-blend-luminosity opacity-70" />
+    </div>
+
+    <div class="relative max-w-7xl mx-auto mt-10 px-4 lg:px-8 z-10">
+      <div class="footer-lists grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+        <!-- Column 1: Product -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Product</h3>
+          <ul class="box space-y-2">
+            <li><a href="#" class="hover:text-gray-300">Landing Page</a></li>
+            <li><a href="#" class="hover:text-gray-300">Popup Builder</a></li>
+            <li><a href="#" class="hover:text-gray-300">Web-design</a></li>
+            <li><a href="#" class="hover:text-gray-300">Content</a></li>
+            <li><a href="#" class="hover:text-gray-300">Integrations</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Use Cases -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Use Cases</h3>
+          <ul class="box space-y-2">
+            <li><a href="#" class="hover:text-gray-300">Web Designers</a></li>
+            <li><a href="#" class="hover:text-gray-300">Marketers</a></li>
+            <li>
+              <a href="#" class="hover:text-gray-300">Small Business</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-300">Website Builder</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Resources</h3>
+          <ul class="box space-y-2">
+            <li><a href="#" class="hover:text-gray-300">Academy</a></li>
+            <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+            <li><a href="#" class="hover:text-gray-300">Themes</a></li>
+            <li><a href="#" class="hover:text-gray-300">Hosting</a></li>
+            <li><a href="#" class="hover:text-gray-300">Developers</a></li>
+            <li><a href="#" class="hover:text-gray-300">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Company</h3>
+          <ul class="box space-y-2">
+            <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+            <li><a href="#" class="hover:text-gray-300">Careers</a></li>
+            <li><a href="#" class="hover:text-gray-300">FAQs</a></li>
+            <li><a href="#" class="hover:text-gray-300">Teams</a></li>
+            <li><a href="#" class="hover:text-gray-300">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Contact Us -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+          <ul class=" space-y-2">
+            <li class="flex items-center">
+              <i class="fa fa-map-marker-alt self-start mt-2 mr-2"></i>
+              <span>Wisconsin Ave, Suite 700 Chevy Chase, Maryland 20815</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-2"></i>
+              <span>WWW.MELLOWFOX.COM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Media Card -->
+      <div
+        class="flex flex-col justify-center mx-auto w-full lg:w-2/5 items-center my-20 bg-white bg-opacity-80 rounded-xl">
+        <div class="p-4">
+          <h3 class="text-black text-2xl font-semibold mb-4 text-center">
+            Follow us
+          </h3>
+          <div class="rounded-lg flex space-x-14">
+            <a href="#"><img src="images/facebook.png" /></a>
+            <a href="#"><img src="images/telegram.png" /></a>
+            <a href="#"><img src="images/twitter.png" /></a>
+            <a href="#"><img src="images/instagram.png" /></a>
+            <a href="#"><img src="images/linkedin.png" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Row -->
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <span class="text-sm mb-8 md:mb-0">&copy; 2024 All rights reserved.</span>
+        <div class="flex flex-col md:flex-row justify-center items-center md:space-x-4">
+          <a href="#" class="hover:text-gray-300 text-sm mb-4 md:mb-0">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-300 text-sm mb-4 md:mb-0">Terms of Service</a>
+          <a href="#" class="hover:text-gray-300 text-sm mb-4 md:mb-0">Cookie Policy</a>
+          <a href="#" class="hover:text-gray-300 text-sm mb-4 md:mb-0">Disclaimer</a>
+          <a href="#" class="hover:text-gray-300 text-sm">Help Center</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle')
+    const menu = document.getElementById('menu')
+    const mobileMenu = document.getElementById('mobile-menu')
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden')
+    })
+
+    // Close menu functionality
+    document
+      .getElementById('close-menu')
+      .addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.add('hidden')
+      })
+  </script>
+</body>
+
+</html>
